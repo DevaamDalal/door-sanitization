@@ -5,6 +5,7 @@ Arduino Nano control board for a 24 V pump and two 24 V solenoid valves, trigger
 ## What is here
 
 - DoorSanitization/DoorSanitization.ino — the final two-door sketch.
+- docs/PROJECT_HANDOFF.md — project context and handoff notes for continuing without the original chat.
 - docs/schematic.svg — circuit-level drawing with power, sensing and three MOSFET channels.
 - docs/board-wiring.svg — practical connector and pin map.
 - docs/wiring.md — full netlist, pinout and important distinctions between built and recommended components.
