@@ -1,5 +1,5 @@
 /*
-  Oberon Mist — two-door controller
+  Door Sanitization — two-door controller
   Arduino Nano ATmega328P, 5 V / 16 MHz
   E18-D80NK sensors: active LOW / NPN open collector on D2 and D3.
   MOSFET gates: active HIGH on D5 (pump), D6 (valve 1), D7 (valve 2).

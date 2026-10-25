@@ -1,10 +1,10 @@
-# Oberon Mist
+# Door Sanitization
 
 Arduino Nano control board for a 24 V pump and two 24 V solenoid valves, triggered by two E18-D80NK proximity sensors. This repository records the **working prototype wiring and sketch reported by the builder**. The assistant has not independently tested the physical board.
 
 ## What is here
 
-- OberonMist/OberonMist.ino — the final two-door sketch.
+- DoorSanitization/DoorSanitization.ino — the final two-door sketch.
 - docs/schematic.svg — circuit-level drawing with power, sensing and three MOSFET channels.
 - docs/board-wiring.svg — practical connector and pin map.
 - docs/wiring.md — full netlist, pinout and important distinctions between built and recommended components.
@@ -22,7 +22,7 @@ The onboard Nano pin mapping is D2 sensor 1, D3 sensor 2, D5 pump, D6 valve 1 an
 
 ## Upload
 
-Open OberonMist/OberonMist.ino in the Arduino IDE. Select Arduino Nano and the correct COM port. Use ATmega328P; if an older Nano clone requires it, try ATmega328P (Old Bootloader). The prototype initially failed to upload while in its socket because socket RESET/RST was shorted to GND (0.4 ohm with power removed). That short was found and repaired. If uploads fail again, check RESET on the unpowered empty socket before changing the sketch.
+Open DoorSanitization/DoorSanitization.ino in the Arduino IDE. Select Arduino Nano and the correct COM port. Use ATmega328P; if an older Nano clone requires it, try ATmega328P (Old Bootloader). The prototype initially failed to upload while in its socket because socket RESET/RST was shorted to GND (0.4 ohm with power removed). That short was found and repaired. If uploads fail again, check RESET on the unpowered empty socket before changing the sketch.
 
 Disconnect 24 V and USB before removing/reinserting the Nano. Avoid powering the Nano from the 7805 and USB together until power-source isolation is designed and tested.
 
