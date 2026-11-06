@@ -35,7 +35,7 @@ def svg(w, h, content):
             + "".join(content) + '</svg>\n')
 
 p = []
-p += [txt(44, 63, "OBERON MIST  |  circuit schematic", 34, NAVY, 700),
+p += [txt(44, 63, "DOOR SANITIZATION  |  circuit schematic", 34, NAVY, 700),
       txt(45, 95, "As-built: 24 V / 7805 / Nano / 2 sensors / 3 IRLZ44N. Orange dashed parts are still required.", 18, GRAY),
       rect(36, 126, 1740, 63, "#fff5e8", "#edc89c", 9, 1),
       txt(58, 165, "Load flyback clamps were NOT installed on the reported prototype. 24 V rail diode does not replace them.", 20, "#8d4411", 700)]
@@ -121,7 +121,7 @@ p += [rect(42, 1011, 1733, 106, "#eaf2fb", "#c9d9ea", 8, 1),
       txt(63, 1099, "Output wires are power wiring. Keep load return out of the Nano/sensor ground path.", 15, GRAY)]
 (OUT / "schematic.svg").write_text(svg(1810, 1145, p), encoding="utf-8")
 
-b = [txt(48, 60, "OBERON MIST  |  board wiring map", 33, NAVY, 700),
+b = [txt(48, 60, "DOOR SANITIZATION  |  board wiring map", 33, NAVY, 700),
      txt(49, 93, "Connections by function. Physical connector order other than supply is not asserted.", 17, GRAY),
      rect(35, 117, 1445, 66, "#fff5e8", "#edc89c", 8, 1),
      txt(54, 158, "Power OFF before moving wires. Load flyback diodes have not been installed on this build.", 19, ORANGE, 700),
